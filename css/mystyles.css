@@ -1,6 +1,66 @@
 /* CSS Document */
 
-/*Header Nav and footer */
+/* Custom fonts */
+@font-face {
+   font-family: 'caladea';
+   src: url(fonts/caladea/caladea-bold.ttf) format('truetype');
+   src:local('caladea'); 
+   font-weight: bold;
+}
+
+@font-face {
+   font-family: 'caladea';
+   src: url(fonts/caladea/caladea-bolditalic.ttf) format('truetype'); 
+   font-weight: bolditalic;
+}
+
+@font-face {
+   font-family: impact;
+   src:url(fonts/impact.ttf);
+}
+
+/* Container and section styles */
+
+section, h1 , h2, ul, li, img, p{
+	margin:0px;	
+}
+
+#container {
+	width: 960px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	top: 0px;
+	left: 0px;
+	position: relative;
+}
+
+/* Body */
+body {
+	background-image: url(../images/bkgrd.jpg);
+	background-repeat: repeat;
+}
+
+section {
+	display: block;
+	padding-top:30px;
+	height: 900px;
+	width: 960px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	color:#fff;
+}
+#home #about #contact{
+	color: #fff;
+}
+
+.three{
+	
+	color:#968D8D;
+}
+
+
+/*Header Nav and footer styles*/
 nav {
 	width: 500px;
     font-size: 20px;
@@ -44,13 +104,6 @@ footer ul li a{
 	display: block;	
 }
 
-/* Body */
-body {
-	font: 20px "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
-	background-image: url(../images/bkgrd.jpg);
-	background-repeat: repeat;
-}
-
 /* Float on Nav hover*/
 
 .hvr-float {
@@ -73,9 +126,35 @@ body {
 	background-repeat: no-repeat;
 }
 
+
+
+/* Styles for the "home" section */
+#hello {
+	font-family:'impact', Lucida, sans-serif;
+	font-size:60px;
+	padding:0px 0px 10px 0px;
+}
+#preetha {
+	font-family:'impact', Lucida, sans-serif;
+	font-size:70px;
+	padding:10px 0px 20px 0px;
+	color:#B25372;
+}
+
+#home ,h2, p{
+	line-height: 70%;
+}
+
+#home p{
+	font-family:'caladea', Lucida Blackletter, sans-serif;
+	font-weight:bolditalic;
+	font-size:30px;
+	padding:0px 0px 10px 0px;	
+}
+
 /* Transition for homepage text  */
 
-#one p,h2{
+#home p,h2{
     animation: fadein 3s;
     -moz-animation: fadein 3s; /* Firefox */
     -webkit-animation: fadein 3s; /* Safari and Chrome */
@@ -114,6 +193,39 @@ body {
     }
 }
 
+/* styles for section "about" */
+#about h2{
+	color:#02324D;
+	margin:30px;
+	text-align:center;
+	font-family:'caladea', Lucida Blackletter, sans-serif;
+	font-weight:bolditalic;
+	font-size:40px;
+}
+#about_me{
+	width:75%;
+	height:auto;
+	line-height: 1.5em;
+	word-spacing: normal;
+	padding-left:10em;
+	text-align:justify;
+	margin-top:0 auto;
+	font-family:'caladea', Lucida Blackletter, sans-serif;
+	font-weight:bolditalic;
+	font-size:large;
+	text-indent:30px;
+}
+
+#resume{
+	display:inline;	
+}
+#resume a{
+	white-space:nowrap;
+	color:#DE1F27;
+	text-decoration:none;
+}
+
+/* styles for section "work" */
  #pop {
 	width: 700px; 
 	height: 400px; 
@@ -151,11 +263,84 @@ table {
 	float:right;
 }
 
-#contactform {
-	width:400px;
-	height:auto;
-	margin:0 auto;
-	background-color:#CC5C27;
-	border: 1px solid #5F5E5E;
-	padding:6px;
+/* section Contact form styles*/
+
+#contact h4{
+	font-family:'impact', Lucida, sans-serif;
+	font-size:20px;
+	color: #74321D;
+	text-align:center;
+	margin: 50px auto 20px;
+}
+
+/* Styles for the contact form */
+
+form {
+	max-width: 480px;
+	margin: 0 auto;
+}
+
+label{
+	display:block;
+	margin-bottom:20px;	
+}
+
+span {
+	display:block;
+}
+
+input, textarea{
+	border:2px solid #74321D;
+	width:100%;
+}
+
+input {
+	height: 2em;
+}
+
+input:focus{
+	outline:none;
+	border-color: #C05230;
+}
+.submit_form{
+	width:33%;
+	margin: 0 auto;
+}
+
+.submit_form input{
+	text-align:center;
+	font-size: large;
+	background-color: #74321D;
+	color: #fff;
+	border-radius: 10px;
+	text-transform: uppercase;
+}
+
+.submit_form input:hover{
+	background-color: #C05230;
+}
+
+textarea{
+	height:10em;
+}
+
+textarea:focus{
+	outline:none;
+	border-color: #C05230;
+}
+
+.contact_info label{
+	width:48%;
+	margin: 0 auto 20px;
+	
+}
+
+.contact_info label:nth-child(1){
+	float:left;
+	padding-right:9px;
+}
+
+.contact_info label:nth-child(2){
+	float:right;
+	padding-left:9px;
 }

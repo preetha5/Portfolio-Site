@@ -6,97 +6,6 @@
 <link rel="stylesheet" type="text/css" href="css/hover.css">
 <link rel="stylesheet" type="text/css" href="css/mystyles.css">
 <style type="text/css">
-section, h1 , h2, ul, li, img, p{
-	margin:0px;	
-}
-@font-face {
-   font-family: 'caladea';
-   src: url(fonts/caladea/caladea-bold.ttf) format('truetype');
-   src:local('caladea'); 
-   font-weight: bold;
-}
-
-@font-face {
-   font-family: 'caladea';
-   src: url(fonts/caladea/caladea-bolditalic.ttf) format('truetype'); 
-   font-weight: bolditalic;
-}
-
-@font-face {
-   font-family: impact;
-   src:url(fonts/impact.ttf);
-}
-#container {
-	width: 960px;
-	height: auto;
-	margin-left: auto;
-	margin-right: auto;
-	top: 0px;
-	left: 0px;
-	position: relative;
-}
-
-section {
-	display: block;
-	padding-top:30px;
-	height: 900px;
-	width: 960px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-}
-#one{
-	color: #fff;
-}
-#two{
-	
-	color:#524A4A;
-}
-
-.three{
-	
-	color:#968D8D;
-}
-#five{
-	
-	color:#fff;
-}
-
-
-#hello {
-	font-family:'impact', Lucida, sans-serif;
-	font-size:60px;
-	padding:0px 0px 10px 0px;
-}
-#preetha {
-	font-family:'impact', Lucida, sans-serif;
-	font-size:70px;
-	padding:10px 0px 20px 0px;
-	color:#B25372;
-}
-
-#one ,h2, p{
-	line-height: 70%;
-}
-
-#one p{
-	font-family:'caladea', Lucida Blackletter, sans-serif;
-	font-weight:bolditalic;
-	font-size:30px;
-	padding:0px 0px 10px 0px;	
-}
-
-
-#about{
-	width:70%;
-	height:auto;
-	color: #FFFFFF;
-	line-height: 1em;
-	word-spacing: normal;
-	padding-left:10em;
-	text-align:justify;
-	margin-top:0 auto;
-}
-
 .floatleft {
 	float: left;
 	//margin-bottom:5px;
@@ -111,18 +20,7 @@ section {
     margin-left: auto;
     margin-right: auto;
 }
-.resume a {
-	color:#DE1F27;
-	text-decoration:none;
-}
-#subject {
-	width: 200px;
-	height: 35px;
-}
-#textarea {
-	width: 200px;
-	height: 200px;
-}
+
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <script src="js/myjs.js"></script>
@@ -133,16 +31,16 @@ section {
 
 <nav>
 	<ul>
-	<li><a href="#one" class="hvr-float">Home</a></li> 
-	<li><a href="#two" class="hvr-float">About</a> </li>
+	<li><a href="#home" class="hvr-float">Home</a></li> 
+	<li><a href="#about" class="hvr-float">About</a> </li>
 	<li><a href="#work" class="hvr-float">Work</a> </li>
 	<li><a href="https://howzzart.wordpress.com" title="To my blog site" target="new" class="hvr-float">Blog</a> </li>
-	<li><a href="#five" class="hvr-float">Contact</a>
+	<li><a href="#contact" class="hvr-float">Contact</a>
     </li>
     </ul>
 </nav>
 
-<section id="one">
+<section id="home">
   <table border="0" align="center">
     <tbody>
       <tr>
@@ -169,29 +67,26 @@ section {
   </table>
   <footer>
     <ul>
- <li><a href="https://howzzart.wordpress.com">
+ <li><a href="https://www.linkedin.com/in/preetha-ramakrishnan-07b1891">
  <img src="images/linkedin.png"/></a> </li>
- <li><a href="https://howzzart.wordpress.com">
+ <li><a href="https://www.facebook.com/people/Preetha-Ramakrishnan/100011210741907">
  <img src="images/Facebook-icon-1.png"/></a> </li>
- <li><a href="https://howzzart.wordpress.com">
+ <li><a href="mailto:admin@prdesignerstudio.com">
  <img src="images/email.png"/></a> </li>
  </ul>
  </footer> 
 </section>
 
-<section id="two">
+<section id="about">
 
 <img src="images/selfpotrait.png" alt="Self portrait posterised" style="float:left;margin-top:50px;"/>
 <br>
 <br>
-<h3>About me</h3>
-<p id="about">
- I am a self-starter, competitive software engineer turned designer
-  based out of SanDiego, CA. After 10 years in the technology industry, I let it go to quench my creative thirst by learning interactive media design. Speaking through digital mediums  provides a balance I seek between
-  technology and design. Trying to make my designs
-  communicative with as few words is something I love to
-  experiment all the time for both print and web. Feel free to download my <span class="resume"><a href="resume.pdf" title="resume" target="_blank">resume</a></span> here to learn more about my skills.</p>
+<h2>About Me</h2>
+<p id="about_me">
+ I am an aspiring visual designer based out of Sandiego, CA. Creating designs that are meaningful, practical and at the same time beautiful is my passion. In my past life I used to be a software engineer. After 10 years in the technology industry, I let it go to quench my creative thirst by pursuing interactive media design. Speaking through digital mediums  provides a balance I seek between technology and design. I always strive to make my work  communicative with as few words as possible either it be the print or the web media. Want to know more about my skills? Feel free to download my <span id="resume"><a href="resume.pdf" target="_blank">resume</a></span> here.</p>
 </section>
+
 <section id="work" class="three">
 <table border="0" align="center">
   <tbody>
@@ -225,47 +120,21 @@ section {
 
 </section>
 
-<section id="five">Contact
-	<form action="mailscript.php" method="post" id="contactform" onSubmit="return validateform()">
-    <table width="0" border="0">
-  <tbody>
-    <tr>
-      <td><label>Name:
-        </label>
-        <p>
-          <input type="text" name="name" id="name">
-        </p></td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td><label>Email:
-        </label>
-        <p>
-          <input type="text" name="email" id="email">
-        </p></td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td><label for="message">Message:</label>
-        <textarea name="message" id="message"></textarea></td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td><input type="submit" name="submit" id="submit" value="submit"></td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-    </tr>
-  </tbody>
-</table>
-
-    </form>
+<section id="contact">
+	<h4> LET'S GET TO WORK! </h4>
+	<form action="https://formspree.io/admin@prdesignerstudio.com" method="POST">
+    <div class="contact_info">
+    <label><span>Your Name</span> 
+    <input type="text" name="name"></label>
+    <label><span>Your Email</span> 
+    <input type="email" name="_replyto"></label>
+    </div>
+    <label><span>Message</span> 
+    <textarea name="message"></textarea></label>
+    <div class="submit_form">
+    <input type="submit" value="Send"/>
+    </div>
+</form>
 
 </section>
 
