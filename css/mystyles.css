@@ -3,21 +3,40 @@
 /* Custom fonts */
 @font-face {
    font-family: 'caladea';
-   src: url(fonts/caladea/caladea-bold.ttf) format('truetype');
-   src:local('caladea'); 
+   src: url(../fonts/caladea/caladea-bold.ttf) format('truetype');
    font-weight: bold;
+   font-style: normal;
 }
 
 @font-face {
    font-family: 'caladea';
-   src: url(fonts/caladea/caladea-bolditalic.ttf) format('truetype'); 
-   font-weight: bolditalic;
+   src: url(../fonts/caladea/caladea-bolditalic.ttf) format('truetype'); 
+   font-weight: bold;
+   font-style: italic;
 }
 
 @font-face {
    font-family: impact;
-   src:url(fonts/impact.ttf);
+   src:url(../fonts/impact.ttf);
+   font-weight:normal;
 }
+
+/* common styles*/
+.floatleft {
+	float: left;
+	margin-bottom:5px;
+}
+.floatright {
+	float:right;
+	margin-bottom:5px;
+}
+.center {
+	width:auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 /* Container and section styles */
 
@@ -73,6 +92,7 @@ nav {
     right: 0;
     margin: 0 auto;
 	position:fixed;
+	z-index:1000;
 }
 nav ul li a{
 	text-decoration: none;
@@ -129,6 +149,10 @@ footer ul li a{
 
 
 /* Styles for the "home" section */
+
+#home{
+	padding-top:10em;	
+}
 #hello {
 	font-family:'impact', Lucida, sans-serif;
 	font-size:60px;
@@ -147,7 +171,8 @@ footer ul li a{
 
 #home p{
 	font-family:'caladea', Lucida Blackletter, sans-serif;
-	font-weight:bolditalic;
+	font-weight:bold;
+	font-style:italic;
 	font-size:30px;
 	padding:0px 0px 10px 0px;	
 }
@@ -194,14 +219,22 @@ footer ul li a{
 }
 
 /* styles for section "about" */
+
+#about{
+	
+	padding-top:10em;
+}
+
 #about h2{
 	color:#02324D;
 	margin:30px;
 	text-align:center;
 	font-family:'caladea', Lucida Blackletter, sans-serif;
-	font-weight:bolditalic;
+	font-weight:bold;
+	font-style: italic;
 	font-size:40px;
 }
+
 #about_me{
 	width:75%;
 	height:auto;
@@ -211,7 +244,8 @@ footer ul li a{
 	text-align:justify;
 	margin-top:0 auto;
 	font-family:'caladea', Lucida Blackletter, sans-serif;
-	font-weight:bolditalic;
+	font-weight:bold;
+	font-style:italic;
 	font-size:large;
 	text-indent:30px;
 }
@@ -219,14 +253,20 @@ footer ul li a{
 #resume{
 	display:inline;	
 }
+
 #resume a{
 	white-space:nowrap;
-	color:#DE1F27;
+	color:#02324D;
 	text-decoration:none;
 }
 
 /* styles for section "work" */
- #pop {
+
+#work{
+	padding-top:10em;
+}
+
+#pop {
 	width: 700px; 
 	height: 400px; 
 	background: #ff0;
@@ -234,8 +274,8 @@ footer ul li a{
 	padding:10px;
  	position: fixed;
   	top: screenTop;
- 	 left: 0;
- 	 right: 0;
+ 	left: 0;
+ 	right: 0;
   	bottom: 0;
   	z-index: 500;
   	display: none;
@@ -263,17 +303,20 @@ table {
 	float:right;
 }
 
-/* section Contact form styles*/
+
+/* Styles for the contact form */
+
+#contact{
+	padding-top:10em;
+}
 
 #contact h4{
 	font-family:'impact', Lucida, sans-serif;
-	font-size:20px;
+	font-size:30px;
 	color: #74321D;
 	text-align:center;
-	margin: 50px auto 20px;
+	margin: 50px auto 50px;
 }
-
-/* Styles for the contact form */
 
 form {
 	max-width: 480px;

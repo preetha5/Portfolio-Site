@@ -5,21 +5,8 @@
 <title>Preetha's website</title>
 <link rel="stylesheet" type="text/css" href="css/hover.css">
 <link rel="stylesheet" type="text/css" href="css/mystyles.css">
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
 <style type="text/css">
-.floatleft {
-	float: left;
-	//margin-bottom:5px;
-}
-.floatright {
-	float:right;
-	margin-bottom:5px;
-}
-.center {
-	width:auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
@@ -68,11 +55,11 @@
   <footer>
     <ul>
  <li><a href="https://www.linkedin.com/in/preetha-ramakrishnan-07b1891">
- <img src="images/linkedin.png"/></a> </li>
+ <img src="images/linkedin.png" alt = "Linkedin icon"/></a> </li>
  <li><a href="https://www.facebook.com/people/Preetha-Ramakrishnan/100011210741907">
- <img src="images/Facebook-icon-1.png"/></a> </li>
+ <img src="images/Facebook-icon-1.png" alt = "facebook icon"/></a> </li>
  <li><a href="mailto:admin@prdesignerstudio.com">
- <img src="images/email.png"/></a> </li>
+ <img src="images/email.png" alt = "email icon"/></a> </li>
  </ul>
  </footer> 
 </section>
@@ -84,35 +71,35 @@
 <br>
 <h2>About Me</h2>
 <p id="about_me">
- I am an aspiring visual designer based out of Sandiego, CA. Creating designs that are meaningful, practical and at the same time beautiful is my passion. In my past life I used to be a software engineer. After 10 years in the technology industry, I let it go to quench my creative thirst by pursuing interactive media design. Speaking through digital mediums  provides a balance I seek between technology and design. I always strive to make my work  communicative with as few words as possible either it be the print or the web media. Want to know more about my skills? Feel free to download my <span id="resume"><a href="resume.pdf" target="_blank">resume</a></span> here.</p>
+ I am an aspiring visual designer based out of sunny Sandiego, CA. After working as a software engineer for 10 years in the telecom industry I decided to pursue my real passion for design. I strongly beleive that every design in this day and age should combine A (arts), B (bits/binary) and C (culture) to be fully successful. Also, user experience is a big part of everyday life, it is <strong>not</strong> an optional process one incorporates anymore, so no product design can be complete without embracing it at every stage. Speaking through a digital medium provides a balance I seek between technology and creativity.  Want to know more about my skills? Feel free to download my <span id="resume"><a href="resume.pdf" target="_blank">resume</a></span> here, or send me a message through the contact form.</p>
 </section>
 
 <section id="work" class="three">
 <table border="0" align="center">
   <tbody>
     <tr>
-      <td><a href="print_gallery.html" target="_blank">
-      <img src="images/frame1.png" class="floatleft" id="Image1" onMouseOver="MM_swapImage('Image1','','images/Frame1_hover.png',1)" onMouseOut="MM_swapImgRestore()"/></a>
+      <td><a href="print_gallery.html">
+      <img src="images/frame1.png" alt = "print module" class="floatleft" id="Image1" onMouseOver="MM_swapImage('Image1','','images/Frame1_hover.png',1)" onMouseOut="MM_swapImgRestore()"/></a>
       </td>
       <td>&nbsp;</td>
-      <td> <a href="media_gallery.html" target="_blank">
-   <img src="images/frame2.png" class="floatright" id="Image2" onMouseOver="MM_swapImage('Image2','','images/Frame2_hover.png',1)" onMouseOut="MM_swapImgRestore()"/>
+      <td> <a href="media_gallery.html">
+   <img src="images/frame2.png" alt="multimedia" class="floatright" id="Image2" onMouseOver="MM_swapImage('Image2','','images/Frame2_hover.png',1)" onMouseOut="MM_swapImgRestore()"/>
     </a> </td>
     </tr>
     <tr>
-      <td><a href="print_gallery.html" target="_blank">
-   <img src="images/text_Print.png"/>
+      <td><a href="print_gallery.html">
+   <img src="images/text_Print.png" alt="print text"/>
    </a></td>
-      <td><a href="ui_ux_gallery.html" target="_blank">
-   <img src="images/text_uiux.png"/>
+      <td><a href="ui_ux_gallery.html">
+   <img src="images/text_uiux.png" alt="uiuix text"/>
    </a></td>
-      <td><a href="media_gallery.html" target="_blank">
-   <img src="images/text_mm.png"/>
+      <td><a href="media_gallery.html">
+   <img src="images/text_mm.png" alt="multimedia text"/>
    </a></td>
     </tr>
     <tr>
       <td>&nbsp;</td>
-      <td> <a href="ui_ux_gallery.html" target="_blank" class="floatright"><img src="images/frame3.png" id="Image3" onMouseOver="MM_swapImage('Image3','','images/Frame3_hover.png',1)" onMouseOut="MM_swapImgRestore()" /></a></td>
+      <td> <a href="ui_ux_gallery.html" alt="ui ux" class="floatright"><img src="images/frame3.png" alt="uiux gallery" id="Image3" onMouseOver="MM_swapImage('Image3','','images/Frame3_hover.png',1)" onMouseOut="MM_swapImgRestore()" /></a></td>
       <td>&nbsp;</td>
     </tr>
   </tbody>
@@ -121,7 +108,7 @@
 </section>
 
 <section id="contact">
-	<h4> LET'S GET TO WORK! </h4>
+	<h4> LET'S GET TO WORK ! </h4>
 	<form action="https://formspree.io/admin@prdesignerstudio.com" method="POST">
     <div class="contact_info">
     <label><span>Your Name</span> 
@@ -133,6 +120,7 @@
     <textarea name="message"></textarea></label>
     <div class="submit_form">
     <input type="submit" value="Send"/>
+    <input type="hidden" name="_next" value="form_thanks.html"/>
     </div>
 </form>
 

@@ -1,0 +1,64 @@
+<!-- Style for the Form confirmation page -->
+
+/* Custom fonts */
+@font-face {
+   font-family: 'caladea';
+   src: url(../fonts/caladea/caladea-bold.ttf) format('truetype');
+   font-weight: bold;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'caladea';
+   src: url(../fonts/caladea/caladea-bolditalic.ttf) format('truetype'); 
+   font-weight: bold;
+   font-style: italic;
+}
+
+@font-face {
+   font-family: 'caladea';
+   src: url(../fonts/caladea/caladea-regular.ttf) format('truetype'); 
+   font-weight: normal;
+}
+@font-face {
+   font-family: impact;
+   src:url(../fonts/impact.ttf);
+   font-weight:normal;
+}
+
+/* Body */
+body {
+	background-image: url(../images/bkgrd.jpg);
+	background-repeat: repeat;
+}
+
+#form_thanks{
+	margin:0 auto;
+}
+
+#form_thanks h2{
+	color:#fff;
+	text-align:center;
+}
+
+#form_thanks p{
+	font-family:'caladea';
+	font-weight: normal;
+	color:#fff;
+	text-align:center;
+	font-size:large;
+}
+
+footer {
+	text-align:center;
+}
+footer ul li{
+	display: inline;
+}
+
+footer img{
+	padding:20px;
+}
+footer ul {
+	list-style:none;
+}
