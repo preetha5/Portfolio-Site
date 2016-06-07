@@ -1,7 +1,7 @@
 .videogallery {
 	width:100%;
 	zoom:1;
-	margin: 10em auto;
+	margin: 5em auto;
 	text-align:center;
 }
 .videogallery span{ display:block; }
@@ -9,7 +9,6 @@
 	display:-moz-inline-stack;
 	display:inline-block;
 	zoom:1;
-	*display:inline;
 	position:relative;
 	vertical-align:top;
 	margin:3px;

@@ -15,9 +15,19 @@
 
 		<script src="js/visuallightbox.js" type="text/javascript"></script>
 
-
+		<script type="text/javascript">
+        var started;
+  		function showLightBox() 
+  	{ 
+    	if (started) return;
+    	started = setTimeout(function(){
+        Lightbox.start(document.getElementById('firstImage'));
+        started;
+    	},500);
+  }
+	</script>
 </head>
-<body>
+<body onLoad="javascript:showLightBox()">
 	<!--Navigation menu -->
     
     <nav>
@@ -33,7 +43,7 @@
 
 	<!-- Start VisualLightBox.com BODY section id=0 -->
 
-	<div id="vlightbox0"><a class="vlightbox0" href="images/ui_ux_large/wall_display1.jpg" title="Responsive Design-Wall Display"><img src="images/ui_ux_thumb/wall_display_thumb.jpg" alt="Responsive Design-Wall Display"/></a>
+	<div id="vlightbox0"><a class="vlightbox0" href="images/ui_ux_large/wall_display1.jpg" id="firstImage" title="Responsive Design-Wall Display"><img src="images/ui_ux_thumb/wall_display_thumb.jpg" alt="Responsive Design-Wall Display"/></a>
 
 	<a class="vlightbox0" href="images/ui_ux_large/dashboard1.jpg" title="Responsive Design-Dashboard"><img src="images/ui_ux_thumb/dashboard1_thumb.jpg" alt="Responsive Design-Dashboard"/></a>
 <a class="vlightbox0" href="images/ui_ux_large/dashboard2.jpg" title="Responsive Design-Dashboard"><img src="images/ui_ux_thumb/dashboard2_thumb.jpg" alt="Responsive Design-Dashboard"/></a><a class="vlightbox0" href="images/ui_ux_large/watch1.jpg" title="Responsive Design- Watch"><img src="images/ui_ux_thumb/watch1_thumb.jpg" alt="Responsive Design- Watch"/></a>

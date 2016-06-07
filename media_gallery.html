@@ -14,11 +14,10 @@
 
 			<link rel="stylesheet" type="text/css" href="css/overlay-minimal.css"/>
 
-			<script src="js/jquery.js" type="text/javascript"></script>
+		<script src="js/jquery.js" type="text/javascript"></script>
 
-			<script src="js/swfobject.js" type="text/javascript"></script>
-
-		<!-- End VideoLightBox.com HEAD section --></head>
+		<script src="js/swfobject.js" type="text/javascript"></script>
+ </head>
 
 <body>
     <nav>
@@ -32,18 +31,24 @@
     </ul>
 </nav>
 
-<!-- Start VideoLightBox.com BODY section -->
+<!-- Start VideoLightBox.com BODY show thumbnails-->
 
 		<div class="videogallery">
-	<a class="voverlay" href="http://www.youtube.com/v/ADSxuPWOWOU?autoplay=1&rel=0&enablejsapi=1&playerapiid=ytplayer" title="(Mock Trailer )Cosmos : War of the Planets (1971)"><img src="images/media_thumb/0.png" alt="(Mock Trailer )Cosmos : War of the Planets (1971)" />(Mock Trailer )Cosmos : War of the Planets (1971)<span></span></a>
-<a class="voverlay" href="http://www.youtube.com/v/8t7p1wItSoU?autoplay=1&rel=0&enablejsapi=1&playerapiid=ytplayer" title="Silent Voices - Unsung heroines of modern era"><img src="images/media_thumb/1.png" alt="Silent Voices - Unsung heroines of modern era" />Silent Voices - Unsung heroines of modern era<span></span></a>
+	<a class="voverlay" id="mylink" href="http://www.youtube.com/v/ADSxuPWOWOU?autoplay=1&rel=0&enablejsapi=1&playerapiid=ytplayer" title="(Mock Trailer )Cosmos : War of the Planets (1971)"><img src="images/media_thumb/0.png" alt="(Mock Trailer )Cosmos : War of the Planets (1971)" />(Mock Trailer )Cosmos : War of the Planets (1971)<span></span></a>
+<a class="voverlay" href="http://www.youtube.com/v/8t7p1wItSoU?autoplay=1&rel=0&enablejsapi=1&playerapiid=ytplayer" title="Silent Voices - Unsung heroines of modern era"><img src="images/media_thumb/1.png" alt="Silent Voices - Unsung heroines of modern era" />Silent Voices - A short documentary<span></span></a>
 <a class="voverlay" href="http://www.youtube.com/v/CvNpJm-ZtAQ?autoplay=1&rel=0&enablejsapi=1&playerapiid=ytplayer" title="What is a good design?"><img src="images/media_thumb/2.png" alt="What is a good design?" />What is a good design?<span></span></a>
 <a class="voverlay" href="http://www.youtube.com/v/TfH-yvKjbU8?autoplay=1&rel=0&enablejsapi=1&playerapiid=ytplayer" title="Chase me to the end of the world (A mixcraft composition)"><img src="images/media_thumb/3.png" alt="Chase me to the end of the world (A mixcraft composition)" />Chase me to the end of the world (A mixcraft composition)<span></span></a><span class="videolb"><a href="http://videolightbox.com">video embed</a> by VideoLightBox.com v3.1</span>
+<a class="voverlay" href="video/flash_foodwaste.swf" title="Food Waste (Flash PSA)"><img src="images/media_thumb/flashsite_thumb.png" alt="Food Waste (Flash PSA)" />Food Waste (Flash PSA)<span></span></a><span class="videolb"><a href="http://videolightbox.com">video in html</a> by VideoLightBox.com v3.1</span>
+
 	</div>
 
 	<script src="js/jquery.tools.min.js" type="text/javascript"></script>
 
 	<script src="js/videolightbox.js" type="text/javascript"></script>
+    
+    <!--script type="text/javascript">
+$( function(){$(".videogallery a[rel]:first").overlay().load()});
+ </script-->
 
 	<!-- End VideoLightBox.com BODY section --></body>
 </html>

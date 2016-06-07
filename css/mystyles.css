@@ -110,10 +110,11 @@ footer ul, nav ul {
 
 footer {
 	width:210px;
-	bottom: 0;
+	top: 0;
 	right:0;
     float:right;
 	position:fixed;
+	padding-top: 1%;
 }
 
 footer ul li a{
@@ -151,7 +152,7 @@ footer ul li a{
 /* Styles for the "home" section */
 
 #home{
-	padding-top:10em;	
+	padding-top:2%;	
 }
 #hello {
 	font-family:'impact', Lucida, sans-serif;
@@ -222,7 +223,7 @@ footer ul li a{
 
 #about{
 	
-	padding-top:10em;
+	padding-top:5%;
 }
 
 #about h2{
@@ -263,7 +264,7 @@ footer ul li a{
 /* styles for section "work" */
 
 #work{
-	padding-top:10em;
+	padding-top:5%;
 }
 
 #pop {
@@ -307,7 +308,7 @@ table {
 /* Styles for the contact form */
 
 #contact{
-	padding-top:10em;
+	padding-top:8%;
 }
 
 #contact h4{
