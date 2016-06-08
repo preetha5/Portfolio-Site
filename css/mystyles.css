@@ -16,7 +16,7 @@
 }
 
 @font-face {
-   font-family: impact;
+   font-family: 'impact';
    src:url(../fonts/impact.ttf);
    font-weight:normal;
 }
@@ -152,7 +152,7 @@ footer ul li a{
 /* Styles for the "home" section */
 
 #home{
-	padding-top:2%;	
+	padding-top:5%;	
 }
 #hello {
 	font-family:'impact', Lucida, sans-serif;
@@ -223,7 +223,7 @@ footer ul li a{
 
 #about{
 	
-	padding-top:5%;
+	padding-top:10%;
 }
 
 #about h2{
@@ -243,12 +243,18 @@ footer ul li a{
 	word-spacing: normal;
 	padding-left:10em;
 	text-align:justify;
-	margin-top:0 auto;
+	margin:0 auto;
 	font-family:'caladea', Lucida Blackletter, sans-serif;
 	font-weight:bold;
 	font-style:italic;
 	font-size:large;
-	text-indent:30px;
+	text-indent:100px;
+}
+
+.highlight_text{
+	font-size:x-large;
+	color:#487462;
+	display:inline;
 }
 
 #resume{
@@ -308,7 +314,7 @@ table {
 /* Styles for the contact form */
 
 #contact{
-	padding-top:8%;
+	padding-top:10%;
 }
 
 #contact h4{
