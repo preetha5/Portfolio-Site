@@ -1,5 +1,10 @@
 /* CSS Document */
 
+*{
+    margin:0;
+    padding: 0;
+}
+
 /* Custom fonts */
 @font-face {
    font-family: 'caladea';
@@ -36,22 +41,8 @@
     margin-left: auto;
     margin-right: auto;
 }
-
-
-/* Container and section styles */
-
-section, h1 , h2, ul, li, img, p{
-	margin:0px;	
-}
-
-#container {
-	width: 960px;
-	margin: 0 auto;
-/*
-	top: 0px;
-	left: 0px;
-*/
-	position: relative;
+.clearIt{
+    clear: both;
 }
 
 /* Body */
@@ -60,27 +51,30 @@ body {
 	background-repeat: repeat;
 }
 
-section {
-	display: block;
-	padding-top:30px;
-/*
-	height: 900px;
-	width: 960px;
-*/
-    width: 100%;
-    height: auto;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	color:#fff;
+/* Container and section styles */
+
+#container {
+	width: 100%;
+	margin: 0 auto;
+    text-align: center;
+    color:#fff;
 }
 
+section {
+	display1: block;
+	height: 900px;
+    width: 100%;
+	margin-top: 3em;
+	margin-bottom: 0px;
+	
+}
+
+span{
+    display: block;
+}
 img{
     max-width: 100%;
     height: auto;
-}
-
-#home #about #contact{
-	color: #fff;
 }
 
 .three{
@@ -91,27 +85,35 @@ img{
 
 /*Header Nav and footer styles*/
 nav {
-	width: 500px;
-    font-size: 20px;
+    padding: 0;
+    text-align1: center;
+    font-size: 1.2em;
     font-family:'caladea', Lucida Blackletter, sans-serif;
 	font-weight:bold;
     text-shadow: 3px 2px 3px #333333;
-	text-align:center;
-	top: 0;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
 	position:fixed;
+    width: 100%;
+    top:0;
+    left:50%;
+    margin-left: -175px;
 	z-index:1000;
+}
+
+nav ul{
+    text-align1: center;
+}
+nav ul li{
+    float: left;
+    text-align1: center;
+    width1: 10%;
+    padding: .2em .5em 0px .5em;
+    
 }
 nav ul li a{
 	text-decoration: none;
     color: #fff;
-    padding: 20px 15px 0px 15px;
-	float: left;
-	display: block;
-	margin: 0 auto;
-
+    padding1: 20px 15px 0px 15px;
+	display1: inline-block;
 }
  
 footer ul, nav ul {
@@ -119,22 +121,23 @@ footer ul, nav ul {
 }
 
 footer {
-	width:210px;
 	top: 0;
 	right:0;
-    float:right;
 	position:fixed;
-	padding-top: 1%;
+	padding-top: .5em;
 }
 
+footer ul li{
+    	float: left;
+        padding: .5em .5em;
+}
 footer ul li a{
-	text-decoration: none;
-    color: #fff;
-    padding: 8px 15px 8px 15px;
-	float: left;
-	display: block;	
+	text-decoration: none;	
 }
 
+footer img{
+    width:90%;
+}
 /* Float on Nav hover*/
 
 .hvr-float {
@@ -161,25 +164,9 @@ footer ul li a{
 
 /* Styles for the "home" section */
 
-/*
 #home{
-	padding-top:5%;	
-    margin: 0 auto;
-    width: 98%;
+    padding-top: 4em;
 }
-*/
-#hello {
-	font-family:'impact', Lucida, sans-serif;
-	font-size:3em;
-	padding:0px 0px 10px 0px;
-}
-#preetha {
-	font-family:'impact', Lucida, sans-serif;
-	font-size:3.5em;
-	padding:10px 0px 20px 0px;
-	color:#B25372;
-}
-
 #home ,h2, p{
 	line-height: 70%;
 }
@@ -236,32 +223,40 @@ footer ul li a{
 /* styles for section "about" */
 
 #about{
-	
-	padding-top:10%;
+	padding-top:5em;
 }
 
 #about h2{
-	color:#02324D;
-	margin:30px;
-	text-align:center;
+/*	color:#02324D;*/
+    color:#487462;
+	margin-bottom: .8em;
 	font-family:'caladea', Lucida Blackletter, sans-serif;
 	font-weight:bold;
 	font-style: italic;
-	font-size:40px;
+	font-size:2em;
+    display: block;
+    text-align: left;
+    
+}
+
+#about img{
+    width: 25%;
+    float: left;
+    margin-left: 10%;
+    margin-right: 5%;
+    margin-top: 3%;
 }
 
 #about_me{
-	width:75%;
-	height:auto;
+    width: 80%;
+    margin-left: 10%;
 	line-height: 1.5em;
 	word-spacing: normal;
-	padding-left:10em;
 	text-align:justify;
-	margin:0 auto;
 	font-family:'caladea', Lucida Blackletter, sans-serif;
 	font-weight:bold;
 	font-style:italic;
-	font-size:large;
+	font-size:1.2em;
 	text-indent:100px;
 }
 
@@ -336,39 +331,47 @@ table {
 
 /* Styles for the contact form */
 
+/*
 #contact{
 	padding-top:10%;
+    width: 100%;
+	margin: 1% auto;
 }
-
+*/
+#contact{
+	padding-top:4em;
+}
 #contact h4{
+    display: block;
 	font-family:'impact', Lucida, sans-serif;
 	font-size:30px;
 	color: #74321D;
-	text-align:center;
-	margin: 50px auto 50px;
+	margin-top: 2em;
+    margin-bottom: 1em;
 }
 
 form {
-	max-width: 480px;
+	max-width: 70%;
 	margin: 0 auto;
 }
 
 label{
-	display:block;
-	margin-bottom:20px;	
-}
-
-span {
-	display:block;
+    display: inline-block;
+    text-align: right;
+    width: 20%;
+    margin-bottom: 1em;
+    margin-left: -20%;
 }
 
 input, textarea{
-	border:2px solid #74321D;
-	width:100%;
+    width: 50%;
+    margin-left: .5em;
+    margin-bottom: 2em;
+    vertical-align: top;
 }
 
-input {
-	height: 2em;
+textarea{
+    height: 4em;
 }
 
 input:focus{
@@ -381,6 +384,7 @@ input:focus{
 }
 
 .submit_form input{
+    width: 5em;
 	text-align:center;
 	font-size: large;
 	background-color: #74321D;
@@ -393,47 +397,106 @@ input:focus{
 	background-color: #C05230;
 }
 
-textarea{
-	height:10em;
-}
+/* Styles for the galleries*/
 
-textarea:focus{
-	outline:none;
-	border-color: #C05230;
-}
 
-.contact_info label{
-	width:48%;
-	margin: 0 auto 20px;
-	
-}
-
-.contact_info label:nth-child(1){
-	float:left;
-	padding-right:9px;
-}
-
-.contact_info label:nth-child(2){
-	float:right;
-	padding-left:9px;
-}
 
 /* Media Queries */
 
-@media screen and (max-width:950px){
+@media screen and (max-width:800px){
     
-    #hello{
-        font-size: 2.5em;
-    }
+     #home_image{
+            max-width: 80%;
+        }
     
-    #preetha{
-        font-size: 3em;
+    #about h2{
+        font-size: 1.5em;
     }
-    
-    table{
-        width: 65%;
-        height: auto ;
-        background-color: #ccc;
+    #about_me{
+        font-size:1em;
+        margin-left1: .5em;
     }
-   
+
+    footer ul li{
+    	float: none;
+        padding: 0.2em .5em;
+    }
+    footer img{
+        width:75%;
+    }
+}
+
+@media screen and (max-width:600px){
+
+    nav{
+        font-size: 1.2em;
+    }
+    #home_image{
+        max-width: 70%;
+    }
+
+    #contact h4{
+        font-size: 1.5em;
+    }
+
+    input[type="submit"]{
+        font-size: medium;
+    }
+    #work{
+        padding-top:15%;
+    }
+    footer ul li{
+    float: none;
+    padding: 0 .5em;
+    }
+}
+
+@media screen and (max-width:525px){
+
+.hamburger{
+  cursor: pointer;
+  padding: 15px;
+  display: block;
+  position:fixed;
+    top: 0;
+    left: 0;
+  }
+
+.line {
+  border-bottom:4px solid #fff;
+  width:35px;
+  margin-bottom: 6px;
+  }
+  .line:last-child {
+      margin-bottom: 0;
+  }
+
+  nav{
+      width: 100%;
+      margin-top: 15%;
+      margin-left: -50%;
+
+  }
+  nav ul li{
+      width: 100%;
+      padding: 1.5em 0;
+      background-color: rgba(116, 50, 29, .9);
+      border-bottom: solid 1px #fff;
+  }
+
+.hvr-float:hover,
+.hvr-float:focus,
+.hvr-float:active
+ {
+    transform: translateY(-8px);
+    background-image: none;
+}
+  .menu{
+      height: 0;
+      overflow: hidden;
+      transition: height .3s;
+  }
+  .menuOpen{
+      height: 347px;
+  }
 }

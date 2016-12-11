@@ -2,13 +2,11 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Preetha's website</title>
 <link rel="stylesheet" type="text/css" href="css/hover.css">
-<link rel="stylesheet" type="text/css" href="css/mystyles.css">
+<link rel="stylesheet" type="text/css" href="css/mystyles_2.css">
 <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
-<style type="text/css">
-
-</style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <script src="js/myjs.js"></script>
 </head>
@@ -17,7 +15,12 @@
 <div id="container">	
 
 <nav>
-	<ul>
+    <div href="#" class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+	<ul class="menu">
 	<li><a href="#home" class="hvr-float">Home</a></li> 
 	<li><a href="#about" class="hvr-float">About</a> </li>
 	<li><a href="#work" class="hvr-float">Work</a> </li>
@@ -26,52 +29,32 @@
     </li>
     </ul>
 </nav>
-
-<section id="home">
-  <table border="0" align="center">
-    <tbody>
-      <tr>
-        <td align="right" valign="bottom"><img src="images/bg_left.png" alt="image of cofee cup" width="156" height="203"/></td>
-        <td valign="top"><img src="images/computer_key_mouse.png" alt="image of mouse and keyboard"/></td>
-        <td align="left" valign="bottom"><img src="images/bg_right.png" alt="image of tablet"/></td>
-      </tr>
-      <tr>
-        <td valign="bottom"><img src="images/bg_wave.png" alt="wave decoration"/></td>
-        <td valign="baseline"><h2 id="hello">HELLO, I'm</h2>
-          <h2 id="preetha">Preetha</h2>
-          <p><img src="images/ampersand.png"  alt="ampersand"/></p></td>
-        <td valign="bottom"><img src="images/bg_wave.png"  alt="wave decoration"/></td>
-      </tr>
-      <tr>
-        <td height="150"></td>
-        <td valign="top"><p>I LOVE TO CREATE</p>
-          <p>minimalistic</p>
-          <p>user friendly</p>
-          <p>designs</p></td>
-        <td>&nbsp;</td>
-      </tr>
-    </tbody>
-  </table>
-  <footer>
+<div class="clearIt"></div>
+<footer>
     <ul>
- <li><a href="https://www.linkedin.com/in/preetha-ramakrishnan-07b1891" target="_blank">
- <img src="images/linkedin.png" alt = "Linkedin icon"/></a> </li>
- <li><a href="https://www.facebook.com/people/Preetha-Ramakrishnan/100011210741907" target="_blank">
- <img src="images/Facebook-icon-1.png" alt = "facebook icon"/></a> </li>
- <li><a href="mailto:admin@prdesignerstudio.com" target="_blank">
- <img src="images/email.png" alt = "email icon"/></a> </li>
- </ul>
- </footer> 
+         <li><a href="https://www.linkedin.com/in/preetha-ramakrishnan-07b1891" target="_blank">
+         <img src="images/linkedin.png" alt = "Linkedin icon"/></a> </li>
+         <li><a href="https://www.facebook.com/people/Preetha-Ramakrishnan/100011210741907" target="_blank">
+         <img src="images/Facebook-icon-1.png" alt = "facebook icon"/></a> </li>
+         <li><a href="mailto:admin@prdesignerstudio.com" target="_blank">
+         <img src="images/email.png" alt = "email icon"/></a> </li>
+     </ul>
+ </footer>
+ 
+<section id="home">
+
+<img id="home_image" src="images/Home_image.png" alt="picture of computer desk" />
+
+ 
 </section>
 
 <section id="about">
 
-<img src="images/selfpotrait.png" alt="Self portrait posterised" style="float:left;margin-top:50px;"/>
-<br>
-<br>
+<img src="images/selfpotrait.png" alt="Self portrait posterised"/>
+
 <h2>About Me</h2>
 <p id="about_me">
- <span class = "highlight_text">I </span>am an aspiring visual designer based out of sunny Sandiego, CA. After working as a software engineer for 10 years in the telecom industry I decided to pursue my real passion for design. I strongly beleive that every design in this day and age should combine <span class = "highlight_text">A </span>(arts), <span class = "highlight_text">B </span>(bits/binary) and <span class = "highlight_text">C </span>(culture) to be fully successful. Also, user experience is a big part of everyday life, it is NOT an optional process anymore, so no product design can be complete without embracing it at every stage. Speaking through a digital medium provides a balance I seek between technology and creativity.  Want to know more about my skills? Feel free to download my <span id="resume"><a href="resume.pdf" target="_blank">resume</a></span> here, or send me a message through the contact form.</p>
+ <span class = "highlight_text">I </span>am an interaction/web designer based out of sunny Sandiego, CA. After working as a software engineer for 10 years in the telecom industry, I decided to pursue my real passion for design. I strongly beleive that every design in this day and age should combine <span class = "highlight_text">A </span>(arts), <span class = "highlight_text">B </span>(bits/binary) and <span class = "highlight_text">C </span>(culture) to be fully successful. Also, user experience is a big part of everyday life, it is NOT an optional process anymore, so no product design can be complete without embracing it at every stage. Speaking through a digital medium provides a balance I seek between technology and creativity.  Want to know more about my skills? Feel free to download my <span id="resume"><a href="resume.pdf" target="_blank">resume</a></span> here, or send me a message through the contact form. You can also read about my design projects in my <a href="https://howzzart.wordpress.com" target="new">blog.</a></p>
 </section>
 
 <section id="work" class="three">
@@ -87,13 +70,13 @@
     </a> </td>
     </tr>
     <tr>
-      <td><a href="print_gallery.html">
+      <td><a href="print_gallery.html" target="_blank">
    <img src="images/text_Print.png" alt="print text"/>
    </a></td>
-      <td><a href="ui_ux_gallery.html">
+      <td><a href="ui_ux_gallery.html" target="_blank">
    <img src="images/text_uiux.png" alt="uiuix text"/>
    </a></td>
-      <td><a href="media_gallery.html">
+      <td><a href="media_gallery.html" target="_blank">
    <img src="images/text_mm.png" alt="multimedia text"/>
    </a></td>
     </tr>
@@ -110,19 +93,21 @@
 <section id="contact">
 	<h4> LET'S GET TO WORK ! </h4>
 	<form action="https://formspree.io/admin@prdesignerstudio.com" method="POST">
-    <div class="contact_info">
-    <label><span>Your Name</span> 
-    <input type="text" name="name"></label>
-    <label><span>Your Email</span> 
-    <input type="email" name="_replyto"></label>
-    </div>
-    <label><span>Message</span> 
-    <textarea name="message"></textarea></label>
-    <div class="submit_form">
-    <input type="submit" formtarget="_blank" value="Send"/>
-    <input type="hidden" name="_next" value="form_thanks.html"/>
-    </div>
-</form>
+        <div class="contact_info">
+            <label for="form_name" >Your Name</label>
+            <input type="text" name="name" id="form_name" />
+              <p></p>
+            <label for="form_email">Your Email</label>
+            <input type="email" name="_replyto" id="form_email">
+        </div>
+            <label for="form_message">Message   </label>
+            <textarea name="message" id="form_message"></textarea>
+
+        <div class="submit_form">
+            <input type="submit" formtarget="_blank" value="Send"/>
+            <input type="hidden" name="_next" value="form_thanks.html"/>
+        </div>
+    </form>
 
 </section>
 

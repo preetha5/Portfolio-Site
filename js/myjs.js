@@ -8,11 +8,16 @@
           $('html, body').animate({
             scrollTop: target.offset().top
           }, 800);
+          $('.menu').toggleClass('menuOpen'); 
           return false;
         }
       }
     });
 	var screenTop = $(document).scrollTop();
+     //Toggling the hamburger menu for mobile layout
+     $('.hamburger').click(function(){
+        $('.menu').toggleClass('menuOpen'); 
+     });
   });
   
   function MM_preloadImages() { //v3.0
@@ -47,3 +52,5 @@ var message = document.getElementById('message');
 		 return false;
 	 }
  }
+
+

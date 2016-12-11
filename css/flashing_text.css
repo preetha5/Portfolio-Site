@@ -118,11 +118,11 @@
     27% { opacity: 0; width: 100%; }
     100% { opacity: 0; }
 }
-@media screen and (max-width: 768px){
- .rw-words { font-size: 18px; }
+@media screen and (max-width: 800px){
+ .rw-words { font-size: 2.5em; }
 }
-@media screen and (max-width: 320px){
- .rw-words  { font-size: 9px; }
+@media screen and (max-width: 520px){
+ .rw-words  { font-size: 1.5em; }
 }
 
 .wcustomhtml {
