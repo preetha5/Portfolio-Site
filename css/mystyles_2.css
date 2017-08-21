@@ -223,7 +223,7 @@ footer img{
 /* styles for section "about" */
 
 #about{
-	padding-top:5em;
+	padding-top:4em;
 }
 
 #about h2{
@@ -296,24 +296,6 @@ footer img{
   	z-index: 500;
   	display: none;
 }
-
-
-/*
-table {
-	width: 60%;
-    margin: 30px auto;
-	height: 50%;
-	text-align:center;
-	margin-top: 30px;
-	padding-top: 0px;
-	vertical-align:top;
-	align-content:center;
-	position:relative;
-	top:0;
-	left:0;
-	z-index:0;
-}
-*/
 
 table {
     width: 80%;
@@ -397,8 +379,92 @@ input:focus{
 	background-color: #C05230;
 }
 
-/* Styles for the galleries*/
+/* Styles for the website galleries*/
+        .goBack{
+                text-decoration: none;
+                color:#5d2e1c;
+                display: block;
+                text-align: center;
+                padding-bottom: .5em;
+            }
 
+        .page{
+            max-width: 960px;
+            margin:4em auto 1em;
+            display: flex;
+            flex-direction: row;
+            background-color: #5d2e1c;
+            padding-left: .4em;
+            padding-right: .4em;
+        }
+
+        .description{
+            color:#fff;
+            padding: .4em .8em;
+            -webkit-flex: 2;
+            -moz-flex:2 ;
+            -ms-flex: 2;
+            -o-flex: 2;
+            flex: 2;
+        }
+
+        .description h2,h4,p{
+            line-height: 1.3;
+            margin-bottom: 0.5em;
+        }
+
+        .description a{
+            font-size: 1.2em;
+            color: #b7b7b7;
+            text-decoration: none;
+        }
+
+        div.link{
+            margin:.7em auto;
+        }
+        .site_photos{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .site_photos >div{
+                margin-bottom: 1em;
+            }
+
+        .flexrow2{
+            display: flex;
+            align-items: center;              
+        }
+
+        .flexrow2 > div{
+            margin: .5em;
+            flex:1;
+        }
+
+        img { max-width: 100%; height: auto; }
+
+        @media screen and (max-width:800px){
+            .page{
+            display: flex;
+            flex-direction: column;
+            }
+            .flexrow2{
+                flex-direction: column;
+                justify-content: space-around;
+            }
+            
+            .site_photos{
+                padding: .4em .8em;
+            }
+            div.link, .description h2,.description h4{
+            text-align: center;
+            }
+
+            .description p{
+                padding: .4em .5em;
+            }
+        }
 
 
 /* Media Queries */
