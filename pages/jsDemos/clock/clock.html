@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ticking Clock with JS</title>
+    <link rel="shortcut icon" href="../../../images/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="../../../css/mystyles_2.css" type="text/css" />       
+    <style>
+        body{
+            margin,padding :0;
+            background-color:aqua;
+            font-size: 1.5rem;
+            display: flex;
+            flex: 1;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+        
+        .clock{
+            border:solid 20px #fff;
+            border-radius: 50%;
+            height: 20rem;
+            width: 20rem;
+            margin: 1em auto;
+            position: relative;
+            padding: 2rem;
+        }
+        
+        .wrap{
+            position1: relative;
+            width: 100%;
+            height: 100%;
+            transform: translateY(-3px);
+        }
+        .hourHand,.minHand,.secHand{
+            position: absolute;
+            top: 50%;
+            width:50%;
+            height:3px;
+            background-color: black;
+            transform-origin: 100%;
+            -webkit-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            -o-transform: rotate(90deg);
+            transform: rotate(90deg);
+            transition: all .05s;
+            transition-timing-function: cubic-bezier(0, 2.68, 0.66, 1.01);
+        }
+        
+        .hourHand{
+            width: 20%;
+            left: 30%;
+            background-color: red;
+        }
+        
+        .minHand{
+            width: 35%;
+            left: 15%;
+        }
+        
+        .notransition {
+              -webkit-transition: none !important;
+              -moz-transition: none !important;
+              -o-transition: none !important;
+              transition: none !important;
+            }
+        
+        .goBack{
+            font-size: .7em;
+        }
+        
+        .goBack:hover{
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+   <div class="clock">
+      <div class="wrap">
+       <div class="hourHand"></div>
+       <div class="minHand"></div>
+       <div class="secHand"></div>
+       </div>
+   </div>
+   <div>
+       <a class="goBack" href="../../jsDemos.html">&larr; Back to Demos</a>
+   </div>
+    
+    <script>
+        function setTime(){
+            const current = new Date();
+            const seconds = current.getSeconds();
+            const minutes = current.getMinutes();
+            const hours = current.getHours();
+            var secRotation =0;
+            console.log(seconds);
+            //Create second hand rotation
+            
+            const secondHand = document.querySelector('.secHand');
+            secRotation = ((seconds/60)*360)+90;//add 90deg to offset initial css style
+            //Remove the jump when it reaches to 360
+            if (seconds == 0 ){
+                secondHand.classList.add('notransition');
+            }
+            else if (seconds ==1){
+                secondHand.offsetHeight;
+                 secondHand.classList.remove('notransition');
+            }
+            
+            secondHand.style.transform = `rotate(${secRotation}deg)`;
+            
+            //Create minute hand rotation
+            var minRotation = ((minutes/60)*360)+90;//add 90deg to offset initial css style    
+            const minuteHand = document.querySelector('.minHand');
+            minuteHand.style.transform = `rotate(${minRotation}deg)`;
+            
+            //Create Hour hand rotation
+            var hourRotation = ((hours/12)*360)+90;//add 90deg to offset initial css style    
+            const hourHand = document.querySelector('.hourHand');
+            hourHand.style.transform = `rotate(${hourRotation}deg)`;
+            
+        }
+        
+        setInterval(setTime,1000);
+    </script>
+</body>
+</html>

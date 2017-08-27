@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML5 painting a Canvas</title>
+   <link rel="shortcut icon" href="../../../images/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="../../../css/mystyles_2.css" type="text/css" />
+    
+      
+  <style>
+  html, body {
+    margin:0;
+      color:#5d2e1c;
+  }
+      
+      h1{
+        text-align: center;  
+      }
+      
+      #myPalette{
+          border: solid 10px #5d2e1c;
+          display: block;
+          margin: .5em auto;
+          background-color: #999;
+          
+      }
+      .floatLink{
+            position: fixed;
+            bottom: 10%;
+            left: 45%;
+        }
+      .goBack {
+            font-family: 'Times New Roman', sans-serif;
+            font-size: 1em;
+            text-transform: none;
+            font-weight: normal;
+        }
+        .goBack:hover{
+            color:#fff;
+        }
+</style>
+</head>
+
+<body>
+<h1>Draw on the canvas with mouse</h1>
+<canvas id="myPalette" height="500">
+    <p>My Paletter drawing canvas using HTML5 canvas element</p>
+</canvas>
+ <div class="floatLink">
+       <a class="goBack" href="../../jsDemos.html">&larr; Back to Demos</a>
+   </div>
+<script>
+    const canvas = document.querySelector('#myPalette');
+    var ctx = canvas.getContext('2d');
+    canvas.width=window.innerWidth;
+    canvas.height=window.innerHeight;
+    //ctx.lineCap = 'round';
+    ctx.lineJoin = 'bevel';
+    ctx.strokeStyle = "blue";
+    ctx.lineWidth =100;
+    ctx.globalCompositeOperation = 'screen';
+    
+    let isDrawing = false;
+    let lastX =0;
+    let lastY = 0;
+    let hue=0; //starting color of line
+    let strokeDirection = true;
+    
+    function paint(e){
+        if(!isDrawing) return;
+        ctx.strokeStyle=`hsl(${hue},75%,50%)`;
+        ctx.beginPath();
+        //start drawing from
+        ctx.moveTo(lastX, lastY);
+        //draw to x,y
+        ctx.lineTo(e.offsetX, e.offsetY);
+        //Draw the stroke
+        ctx.stroke();
+        
+        //reset the x,y to the current offset values
+        [lastX, lastY] = [e.offsetX,e.offsetY];
+        hue++;
+        if (hue>=360) hue=0;
+        
+        if (ctx.lineWidth >=100 || ctx.lineWidth <= 1){
+            strokeDirection = !strokeDirection;
+        }
+        if(strokeDirection){
+          ctx.lineWidth++;  
+        }
+        else ctx.lineWidth--;
+        
+        
+    }
+    canvas.addEventListener('mousedown',(e) => {
+        
+        isDrawing = true;
+        [lastX, lastY] = [e.offsetX,e.offsetY];
+    });
+    
+    
+    canvas.addEventListener('mousemove', paint);
+    canvas.addEventListener('mouseup',() => isDrawing = false);
+    canvas.addEventListener('mouseout',() => isDrawing = false);
+</script>
+
+
+
+</body>
+</html>
