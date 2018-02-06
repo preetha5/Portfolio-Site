@@ -30,16 +30,14 @@
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
-                align-content: space-between;
-                align-items: flex-start;
+                justify-content: center;
             }
             
             .item{
-                flex: 1;
                 margin: .8em;
             }
-            .photo{
-                border:solid 6px #5d2e1c;
+            .photo img{
+                border:solid 4px #5d2e1c;
                 border-radius: 10px;
             }
             
@@ -89,15 +87,37 @@
     </nav>
     <main class="gallery">
         <div class="row">
+        <div  class="item">
+                <div class="photo">
+                    <a href="https://preetha5.github.io/greeneats" target="_blank">
+                        <img src="images/web_gallery/greeneats_thumb.jpg" alt="green eats thumbnail">
+                    </a>
+                </div>
+                <div class="info">
+                    <h2>Green Eats</h2>
+                    <p>An app focused on finding vegetarian recipes/restaurants.</p>
+                </div>
+            </div>
             <div  class="item">
                 <div class="photo">
                     <a href="pages/iyoga.html">
-                        <img src="images/web_gallery/jobstar_thumb.png" alt="jobstar website thumbnail">
+                        <img src="images/web_gallery/iyoga_thumb.png" alt="iyoga website thumbnail">
                     </a>
                 </div>
                 <div class="info">
                     <h2>Iyoga Transformation</h2>
                     <p>Navigate your life and soul</p>
+                </div>
+            </div>
+            <div  class="item">
+                <div class="photo">
+                    <a href="pages/afa.html">
+                        <img src="images/web_gallery/Afa_thumb.png" alt="AFA website thumbnail">
+                    </a>
+                </div>
+                <div class="info">
+                    <h2>America for Animals</h2>
+                    <p>Justice for animals using technology</p>
                 </div>
             </div>
             <div  class="item">
@@ -111,22 +131,11 @@
                     <p>Front-end design of a job search site</p>
                 </div>
             </div>
-            <div  class="item">
-                <div class="photo">
-                    <a href="pages/afa.html">
-                        <img src="images/web_gallery/Afa_thumb.png" alt="jobstar website thumbnail">
-                    </a>
-                </div>
-                <div class="info">
-                    <h2>America for Animals</h2>
-                    <p>Justice for animals using technology</p>
-                </div>
-            </div>
             
             <div  class="item">
                 <div class="photo">
                     <a href="pages/freshplate.html">
-                        <img src="images/web_gallery/freshplate_thumb.png" alt="jobstar website thumbnail">
+                        <img src="images/web_gallery/freshplate_thumb.png" alt="freshplate website thumbnail">
                     </a>
                 </div>
                 <div class="info">
@@ -137,6 +146,18 @@
             
             <div  class="item">
                 <div class="photo">
+                    <a href="pages/quiz-app/index.html" target="_blank">
+                        <img src="images/web_gallery/quiz_thumb.png" alt="movie trivia app thumbnail">
+                    </a>
+                </div>
+                <div class="info">
+                    <h2>Movie Trivia Quiz</h2>
+                    <p>A quiz app created about classic movie quotes</p>
+                </div>
+            </div>
+
+            <!-- <div  class="item">
+                <div class="photo">
                     <a href="pages/jsDemos.html">
                         <img src="images/web_gallery/jsDemos_thumb.png" alt="javascript demo thumbnail">
                     </a>
@@ -145,7 +166,7 @@
                     <h2>Javascript Demos</h2>
                     <p>Cools examples in javascript</p>
                 </div>
-            </div>
+            </div> -->
         </div>
     </main>
      <footer>
