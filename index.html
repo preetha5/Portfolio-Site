@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500|Open+Sans|Merienda:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <p class="logo"><a href="#home" class="js-scroll">
+            <span class="logo_mobile">&lt;P&gt;&lt;/R&gt;</span>
+            <span class="logo_desktop">&lt;P&gt;Preetha&lt;/R&gt;</span>
+        </a></p>
+        <nav >
+            <ul class="site-nav">
+                <li class="js-link"><a href="#home" class="js-scroll">Home</a></li>
+                <li class="js-link"><a href="#project_gallery" class="js-scroll">Projects</a></li>
+                <li class="js-link"><a href="#about" class="js-scroll">About me</a></li>
+                <li class="js-link"><a href="#contact" class="js-scroll">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="material-icons js-menu-icon">menu</i>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home">
+            <div id="canvas"></div>
+            <div id="intro">
+                <p class="flex-item hello">Hello, I'm, <span class="name">Preetha Ramakrishnan</span>. 
+                </p><p class="flex-item hello">A full stack web developer.</p>
+                <div class="flex-item ">
+                    <!-- <p class="smallText">Scroll down to view my projects</p> -->
+                    <a href="#project_gallery" class="bounce btn_myProjects js-scroll"><i class="material-icons mi_arrow">keyboard_arrow_down</i></a>
+                </div>
+        </div>
+        
+    </section>
+    
+    <section id="project_gallery">
+        <h2 class="sectionTitle">Projects</h2>
+        <div class="projects">
+            <div class="project_container">
+                <div class="project_snapshot">
+                    <img src="images/cover/beetl_1.jpg" alt="project beetl">
+                </div>
+                <div class="overlay">
+                    <div class="overlayText">
+                        <div class="readMore">
+                            <a href="#beetl_proj" data-toggle="modal">Read More</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="project_container">
+                <div class="project_snapshot">
+                        <img src="images/cover/greeneats_1.jpg" alt="project greeneats">
+                    </div>
+                    <div class="overlay">
+                        <div class="overlayText">
+                            <!-- <h4 class="overlayTitle">BEETL BUG TRACKER</h4> -->
+                            <div class="readMore">
+                                <a href="#greeneats_proj" data-toggle="modal" 
+                                alt="greeneats app">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div class="project_container">
+                <div class="project_snapshot">
+                        <img src="images/cover/afa_1.jpg" alt="america for animals">
+                    </div>
+                    <div class="overlay">
+                        <div class="overlayText">
+                            <!-- <h4 class="overlayTitle">BEETL BUG TRACKER</h4> -->
+                            <div class="readMore">
+                                <a href="#afa_proj" data-toggle="modal">Read More</a></div>
+                        </div>
+                    </div>
+                </div>
+            <div class="project_container">
+                <div class="project_snapshot">
+                        <img src="images/cover/freshplate_1.jpg" alt="project freshplate">
+                    </div>
+                <div class="overlay">
+                    <div class="overlayText">
+                        <!-- <h4 class="overlayTitle">BEETL BUG TRACKER</h4> -->
+                        <div class="readMore">
+                            <a href="#freshplate_proj" data-toggle="modal">Read More</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="backToTop"><a href="#home" class="js-scroll"><i class="material-icons mi_arrow">keyboard_arrow_up</i></a> </div>
+    
+    <section id="about">
+        <h2 class="sectionTitle">About me</h2>
+        <!-- <div><img src="images/portrait.jpg" alt="pic of preetha"></div> -->
+        
+            <div class="col">
+                <p class="highlight"><span class="sentence_highlight">I am a full-stack developer based in San Diego. </span>
+            </p>    
+        </div>
+        <div class="bio">
+            <p> My long stint as a software engineer prepped me for complexity, endurance and flexibility. Before moving into web development I used to 
+                work for a multinational telecom company initially as an engineer, then as a senior and staff engineer. As I grew, I built on each 
+                experience forward, working on a variety of software and hardware platforms.</p>
+            <p class="statement">NOW, as a web developer, my passion for problem solving continues. And I feel debugging is ONE OF MY BEST strengths, where I thrive 
+                    on finding solutions for every issue I encounter.</p>
+            <p>Having a creative mindset motivated me to find a balance between TECH + DESIGN and expand my knowledge further.
+                As a recent graduate of Thinkful's full-stack web development bootcamp, my voice is found in this evolving new medium,
+                where technology and creativity are succinctly merged.</p>
+            <p class="statement">I feel I am equipped with the RIGHT TOOLS and eager to use them to create innovative web applications for the future.</p>
+        </div>
+        <ul class="skills">
+            <li>HTML5</li>
+            <li>CSS-SASS</li>
+            <li>NODE-EXPRESS</li>
+            <li>MONGODB</li>
+            <li>REACT</li>
+            <li>JAVASCRIPT</li>
+            <li>BOOTSTRAP</li>
+            <li>WORDPRESS</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2 class="sectionTitle">Let's Get To Work</h2>
+        <form action="https://formspree.io/admin@prdesignerstudio.com" method="POST">
+            <div>
+                <input type="text" placeholder="Fullname">
+            </div>
+            <div>
+                <input type="email" placeholder="youremail@email.com">
+            </div>
+            <div>
+                <input type="textarea" placeholder="Your message">
+            </div>
+            <button class="btn_submit" type="submit">Send</button>
+        </form>
+
+        <div class="social">
+            <ul>
+                <li><a href="https://www.linkedin.com/in/preetha-ramakrishnan-07b1891/"><ion-icon size="large" name="logo-linkedin"></ion-icon></a></li>
+                <li><a href="https:github.com/preetha5"><ion-icon size="large" name="logo-github"></ion-icon></a></li>
+                <li><a href="mailto:preetha.kreations@gmail.com"><ion-icon size="large" name="mail"></ion-icon></a></li>
+            </ul>
+        </div>
+    </section>
+    <footer><p>Made with <i class="fa fa-coffee" aria-hidden="true"></i> and JS </p>
+        <p>Mockups images from <a href="https://www.freepik.com">Freepik</a>
+    </p></footer>
+
+    <!-- Carousel for Beetl APP -->
+    <div class="modal fade" id="beetl_proj" role="dialog" aria-labelledby="beetl_project" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="beetlCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                    <li data-target="#beetlCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#beetlCarousel" data-slide-to="1"></li>
+                    <li data-target="#beetlCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="images/projects/beetl-1.jpg"  alt="beetl desktop">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="images/projects/beetl2.jpg"  alt="beetl phone layout">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="images/projects/beetl3.jpg"  alt="beetl laptop">
+                    </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#beetlCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#beetlCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="projectInfo">
+                    <h6 class="projectTitle">BEETL</h6>
+                    <p class="primaryInfo">BEETL is my version of a lightweight bug tracking system that helps you easily track 
+                        the lifecycle of your issues/bugs from creation to resolution. The frontend was built using REACT.JS and backend with
+                        NODE&MONGODB. The backend REST API's were created using NodeJS/Express to perform the CRUD actions.</p>
+                    <p class="secondaryInfo"> The functionality includes
+                        * Multiple user-role creation
+                        * Easy bug creation and management using Redux forms
+                        * Ability to quickly store/retrieve data from a MongoDB database* </p>
+                        
+                        <p class="secondaryInfo">At the end of this project I gained a lot of confidence to learn and implement a complex full-stack framework within a short turnaround
+                        time.</p>
+                        
+                        <p class="projectTools">TOOLS: REACT, NODE/EXPRESS, MONGODB/MONGOOSE, JAVASCRIPT, MATERIAL-UI DESIGN</p>
+                        
+                        <p class="projectLinks secondaryInfo">
+                            <a href="https://laughing-curie-821400.netlify.com/" alt="link to beetl app" target="_blank">DEMO</a>
+                            <a href="https://github.com/preetha5/beetl-client " alt=" link to beetl code" target="_blank">CODE</a>
+                        </p>
+                        
+                </div>
+            </div><!--modal body-->
+            </div><!--modal content-->
+        </div> <!--modal dialog -->
+    </div> <!-- modal-->
+
+    <!-- Carousel for GreenEats APP -->
+    <div class="modal fade" id="greeneats_proj" role="dialog" aria-labelledby="greeneats_proj" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="greeneatsCarousel" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                        <li data-target="#greeneatsCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#greeneatsCarousel" data-slide-to="1"></li>
+                        <li data-target="#greeneatsCarousel" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="images/projects/greeneats-1.jpg"  alt="green eats landing">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="images/projects/greeneats-2.jpg"  alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="images/projects/greeneats-3.jpg"  alt="Third slide">
+                        </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#greeneatsCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#greeneatsCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <div class="projectInfo">
+                        <h6 class="projectTitle">GREENEATS</h6>
+                            <p class="primaryInfo">GREENEATS is a mobile-responsive vegetarian restaurant/recipe finding guide. Being a vegetarian myself and seeing its benefits prompted me to 
+                            create this app to inspire others. </p>
+                            <p class="secondaryInfo">The main features of this app are:</p>
+                                <ul class="secondaryInfo">
+                                    <li>* Search for vegetarian recipes based on the ingredients you provide.</li>
+                                    <li>* Search for popular veg-friendly restaurants by city name.</li>
+                                </ul>
+                            
+                            
+                            <p class="secondaryInfo">The app pulls this data from public api's like Zomato and Edamam and presents the results to the user. During the development of this app,
+                                I got familiar with the handling of  various public API's (both the advantages and the challenges). I also developed a better understanding of the data
+                                manipulation of the JSON responses I got back from the servers, so that I can create a neat front-end UI based on that information.</p>
+                            
+                            <p class="projectTools">TOOLS: HTML5, JAVASCRIPT, JQUERY, BOOTSTRAP, AJAX, PHOTOSHOP</p>
+                            
+                            <p class="projectLinks">
+                                <a href="https://preetha5.github.io/greeneats/" alt="link to greeneats app" target="_blank">DEMO</a>
+                                <a href="https://github.com/preetha5/greeneats " alt=" link to greeneats code" target="_blank">CODE</a>
+                            </p>
+                            
+                    </div>
+                </div><!--modal body-->
+                </div><!--modal content-->
+            </div> <!--modal dialog -->
+        </div> <!-- modal-->
+
+    <!-- Carousel for AFA APP -->
+    <div class="modal fade" id="afa_proj" role="dialog" aria-labelledby="afa_proj" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="afaCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                    <li data-target="#afaCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#afaCarousel" data-slide-to="1"></li>
+                    <li data-target="#afaCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="images/projects/afa-1.jpg"  alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="images/projects/afa-2.jpg"  alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="images/projects/afa-3.jpg"  alt="Third slide">
+                    </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#afaCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#afaCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="projectInfo">
+                    <h6 class="projectTitle">AMERICA FOR ANIMALS</h6>
+                        <p class="primaryInfo">America For Animals(AFA) is a non-profit organization that provides animal lovers with the necessary apps to help them.
+                            I was hired by AFA to redesign their old website using Wordpress. </p>
+                        <p class="secondaryInfo">It was interesting and motivating to work with other designers 
+                            and clients to understand their requirements and create a whole new design that caters to their brand.
+                        </p> 
+                        
+                        <p class="secondaryInfo">This project involved everything 
+                            from creating wireframes and mockups to development and final deployment. 
+                            Finally I tied up the front-end to their salesforce database and paypal donation systems.</p>
+                        
+                        <p class="projectTools">TOOLS: Wordpress, Axure, SalesForce, Photoshop, WAMP, PhpMyAdmin</p>
+                        
+                        <p class="projectLinks">
+                            <a href="http://www.americaforanimals.org" alt="link to AFA website" target="_blank">WEBSITE</a>
+                        </p>
+                        
+                </div>
+            </div><!--modal body-->
+            </div><!--modal content-->
+        </div> <!--modal dialog -->
+        </div> <!-- modal-->
+
+    <!-- Carousel for Freshplate APP -->
+    <div class="modal fade" id="freshplate_proj" role="dialog" aria-labelledby="freshplate_proj" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="freshplateCarousel" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                        <li data-target="#freshplateCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#freshplateCarousel" data-slide-to="1"></li>
+                        <li data-target="#freshplateCarousel" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="images/projects/freshplate-1.jpg"  alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="images/projects/freshplate-2.jpg"  alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="images/projects/freshplate-3.jpg"  alt="Third slide">
+                        </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#freshplateCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#freshplateCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <div class="projectInfo">
+                        <h6 class="projectTitle">FRESHPLATE</h6>
+                            <p class="primaryInfo">Freshplate is a lightweight front-end framework that gives you the power to build fast and adaptable websites with contemporary styling.
+                                It was a capstone group project for my front-end web certification program. </p>
+                            <p class="secondaryInfo">My role involved creating pure Javascript functions
+                            and libraries for creating different components that Freshplate provides from the get-go. This framework helps you
+                            create a website withing minutes. Key features of this framework include:</p>
+                            <ul class="secondaryInfo">
+                                <li>* 12-column grids</li>
+                                <li>* Provide classes for adding components like accordions, tabs, forms and tables</li>
+                                <li>* Easy helper classes to create cool typography and backgrounds like parallax</li>
+                                <li>* Responsive image addition with photo-gallery creation and slideshow options</li>
+                                <li>* Adding an instagram feed to your page</li>
+                            </ul> 
+                            <p class="secondaryInfo">Developing a whole framework from scratch taught me what the building blocks of a front-end library are. Also having previously worked in 
+                                    teams throughout my career helped me guide the rest of my teammates with code version-control, reviews . I also acted as project manager to manage 
+                                    everyone's daily tasks and conduct stand-ups.</p>
+                            
+                            <p class="projectTools">TOOLS: HTML5, SASS, VANILLA JAVASCRIPT, PHOTOSHOP, GIT</p>
+                            
+                            <p class="projectLinks">
+                                <a href="http://freshplate.servicefocuseddesign.com/" alt="link to freshplate framework documentation" target="_blank">DOCUMENTATION</a>
+                                <a href="https://github.com/preetha5/freshplate" alt=" link to freshplate code" target="_blank">CODE</a>
+                            </p>
+                            
+                    </pv>
+                </div><!--modal body-->
+                </div><!--modal content-->
+            </div> <!--modal dialog -->
+        </div> <!-- modal-->
+
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- <script src="https://threejs.org/examples/js/libs/stats.min.js"></script> -->
+    <script src="https://unpkg.com/ionicons@4.2.1/dist/ionicons.js"></script>
+    <script src="js/canvas.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

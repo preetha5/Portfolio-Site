@@ -1,0 +1,2 @@
+[07-Apr-2017 00:11:40 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home1/preethar/public_html/www/mindful_matters/wp-content/plugins/optinmonster/OMAPI/Widget.php on line 177
+[10-Apr-2017 01:36:37 UTC] PHP Warning:  fopen(): Filename cannot be empty in /home1/preethar/public_html/www/mindful_matters/wp-content/plugins/weekly-schedule/weekly-schedule.php on line 608

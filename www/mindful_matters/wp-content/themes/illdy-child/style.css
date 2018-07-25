@@ -1,0 +1,222 @@
+/*
+Theme Name: Illdy Child Theme
+Theme URI: prdesignerstudio.com
+Description: Custome theme made for Mindful Matters website
+Author: Preetha Ramakrishnan
+Authos URI:
+Template: illdy
+Version: 1.0
+*/
+@import url(../illdy/style.css);
+
+/* Home page styles */
+
+#header .bottom-header h1 {
+	font-size : 60px;
+}
+#header .top-header{
+	padding-bottom:40px;
+}
+header#header.header-blog{
+	background-image: url(http://prdesignerstudio.com/www/mindful_matters/wp-content/uploads/2017/04/cropped-sunset.jpg);
+}
+#header .bottom-header{
+	padding-bottom:10%;
+	padding-top:0;
+}
+
+h5 {
+    font-size: 20px;
+}
+/* Menu Styles*/
+
+/* Remove hover and cursor for 'CLASSES' main menu */
+#header .top-header ul li#menu-item-264.menu-item-has-children.menu-item-264:hover a{
+	cursor:default;
+	color:#fff;
+}
+
+/* Adding default link color for 'CLASSES' child menu*/
+ul#menu-main_menu li#menu-item-264.menu-item-has-children.menu-item-264:hover ul.sub-menu li a{
+	color:#8c9597;
+}
+/* Add back hover and cursor for 'CLASSES' child menu */
+ul#menu-main_menu li#menu-item-264 ul.sub-menu li:hover a{
+	cursor:pointer;
+	color: #ffde00;
+	background-color: #f8f8f8;
+	border-left: 3px solid #ffde00;
+}
+
+/* Services Section*/
+#services .section-content .service .service-entry{
+	color: #fff;
+}
+
+/* Contact Section */
+#contact-us{
+	background-color:#ccc;
+}
+
+/* Footer */
+.bottom-footer .copyright span:first-child{
+    display: none;
+}
+
+/*Common Pages Styles*/
+.page-template-default #blog .blog-post .blog-post-title,
+.page-template #blog .blog-post .blog-post-title
+{
+	display:none;
+}
+
+.page-template-default .col-sm-8.col-sm-offset-2{
+	margin-left:0;
+	width:100%;
+}
+/* Contact Page */
+
+h3.widget-title{
+	font-size:25px;
+}
+
+/* Blog Page styles */
+.markup-format p {
+    margin: 0;
+}
+
+/* Class schedules Page */
+#ws-schedule1{
+	margin-left:15%;
+	margin-top: 10%;
+}
+#ws-schedule1 .markup-format table tbody tr {
+    border: 1px solid #eee;
+}
+#ws-schedule1 .markup-format table tbody tr td:last-child {
+    border-right: 1px solid #eee;
+}
+
+}
+
+
+/* Media Queries **/
+
+@media screen and (max-width:560px){
+
+body {
+    font-size: 14px;
+}
+
+#header .bottom-header h1 {
+    font-size: 30px;
+}
+h3 {
+    font-size: 20px;
+}
+
+
+#footer #synved_social_follow-2 div a img.synved-share-image.synved-social-image.synved-social-image-follow{
+	width:24px !important;
+	height:24px !important;
+}
+#team .section-content .person .person-content {
+    width: auto;
+    float: none;
+}
+#contact-us .section-content {
+    display: none;
+}
+
+#footer ul li{
+	font-size:12px;
+}
+
+#footer .col-xs-12 {
+    width: 50%;
+}
+/* Class schedule page */
+#ws-schedule1 .markup-format table tbody tr td{
+	padding:0;
+}
+#ws-schedule1{
+	margin-left:0;
+}
+.ws-schedule table.vertical1, .ws-schedule .verticalcolumn1 {
+    width: 40px !important;
+}
+}
+
+@media screen and (max-width:780px){
+
+#footer .col-xs-12 {
+    	width: 33%;
+}
+#footer .col-xs-12:last-child {
+	clear:both;
+	margin-left:35%;
+}
+/* Class schedule page styles */
+#ws-schedule1{
+	margin-left:10%
+}
+.markup-format table tbody{
+	font-size:8px;
+}
+
+.ws-schedule table.verticalheader {
+    width: 20px !important;
+}
+
+
+h5 {
+    	font-size: 15px;
+}
+.page-id-92 #blog #post-92 #pl-92 .siteorigin-widget-tinymce h5{
+	text-align: center !important;
+}
+.page-id-92 .ow-button-base.ow-button-align-right{
+	text-align:center;
+}
+}
+@media screen and (min-width:560px and max-width:780px){
+
+.ws-schedule table.vertical1, .ws-schedule .verticalcolumn1 {
+    	width: 70px !important;
+}
+}
+@media screen and (max-width:992px){
+
+/*Add hover states for responsive menu  */
+.responsive-menu ul li:hover a{
+	background-color:#6a4d8a;
+	color:#fff;
+}
+
+/* Remove hover and cursor for 'CLASSES' main menu */
+.responsive-menu ul li.menu-item-264:hover a{
+	background-color:#fff;
+	color:#000;
+	cursor:default;
+}
+
+/* Default styles for sub menu links */
+.responsive-menu ul li.menu-item-264 ul.sub-menu li{
+	background-color:#ffde00;
+}
+/* Add back hover and cursor for 'CLASSES' child menu */
+.responsive-menu ul li.menu-item-264 ul.sub-menu li:hover a{
+	background-color:#6a4d8a;
+	color:#fff;
+	cursor:pointer;
+}
+
+}
+
+@media screen and (max-width:1000px){
+/* Class schedules Page */
+#ws-schedule1{
+	margin-left:0;
+}
+}
+
